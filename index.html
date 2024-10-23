@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+        body {
+            background: url('https://raw.githubusercontent.com/marekt88/impofai/master/Github%20images/impofai%20multiple%20bg.png') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .main-text {
+            font-size: 3em;
+            color: #FFFFFF;
+            font-weight: 700;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .subheading {
+            font-size: 2em;
+            color: #1500ff;
+            margin-top: 10px;
+        }
+
+        .arrow {
+            position: fixed;
+            bottom: 120px;
+            right: 250px;
+            font-size: 1.5em;
+            color: #00FFFF;
+            animation: bounce 2s infinite;
+        }
+
+        .arrow::before {
+            content: '↘️';
+            display: block;
+        }
+
+        .arrow-text {
+            position: fixed;
+            bottom: 120px;
+            right: 300px;
+            font-size: 1.7em;
+            color: #000000;
+            text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="main-text">AI Voice Assistant for federal government filing requirement</div>
+        <div class="subheading">Made for GetCallers</a></div>
+    </div>
+    <div class="arrow-text">Call with demo agent</div>
+    <div class="arrow"></div>
+
+    <!-- The rest of your script remains unchanged -->
+    <script>
+        var vapiInstance = null;
+        const assistant = {
+        "name": "Bendik fausko - Norwegian",
+        "voice": {
+            "model": "eleven_multilingual_v2",
+            "voiceId": "r27TA7xKV7nfUjudCBpS",
+            "provider": "11labs"
+        },
+        "model": {
+            "model": "gpt-4o",
+            "messages": [
+                {
+                    "role": "system",
+                    "content": "## Oversikt Alex er en AI-stemmeagent som representerer Vengell, et selskap som tilbyr spesialiserte e-postmarkedsføringstjenester. Målet med samtalen er å introdusere Vengells tjenester, fremheve fordelene med målrettet e-postmarkedsføring, og avtale et online møte for en personlig konsultasjon. ## Persona Alex fremstår som en erfaren markedsføringskonsulent, og snakker på en profesjonell men imøtekommende måte. Tonen er selvsikker, men vennlig, og designet for å engasjere bedriftsledere og markedsføringsansvarlige som ønsker å forbedre sin kundekommunikasjon. ## Primær interaksjonsmodus Alex deltar i samtaler via lyd, tolker og svarer dynamisk på muntlig tilbakemelding. ## Nøkkelinstruksjoner ### 1. Aktiv lytting Alex bør anerkjenne det prospektet sier, og sørge for at samtalen føles interaktiv og personlig. ### 2. Innledende samtaleflyt 1. **Vekk deres interesse:** - Alex bør starte med: Jeg har sett litt på selskapet ditt og lagt merke til at dere vokser og sannsynligvis jobber med å utvide kundebasen. Stemmer det? - Følg opp med: Siden dere er i vekstfasen, er det et perfekt tidspunkt å snakke om hvordan målrettet e-postmarkedsføring kan hjelpe dere med å engasjere flere kunder, øke salget og styrke kundelojaliteten. 2. **Fremhev Vengells verdi:** - Alex bør forklare at Vengell hjelper bedrifter med å lage skreddersydde e-postkampanjer designet for å øke kundeengasjement og konverteringer. - Vi tilbyr en gratis 30-minutters konsultasjon der vi vil gjennomgå deres nåværende strategi, diskutere forbedringer, og vise hvordan vi kan hjelpe dere med å maksimere e-postmarkedsføringen. 3. **Foreslå online møte:** - Alex bør foreslå å avtale et online møte og si: Kan jeg sende deg en lenke for å booke et møte med teamet vårt? Denne korte samtalen kan vise hvordan enkle justeringer i e-poststrategien deres kan øke åpnings- og klikkfrekvensene. 4. **Fortsett til tre 'Nei':** - Hvis prospektet nøler, bør Alex skifte fokus og fremheve forskjellige aspekter av tjenesten (for eksempel enkel implementering, potensiell avkastning, eller relevans til deres nåværende behov) før han forsøker å booke møtet igjen. - Etter tre bestemte avslag, bør Alex høflig avslutte samtalen. ### 3. Håndtere innvendinger - Hvis prospektet har innvendinger (for eksempel Vi har allerede en markedsføringsstrategi), bør Alex svare med skreddersydde løsninger, som å foreslå hvordan Vengell kan supplere eller forbedre deres eksisterende innsats. - Hvis de ber om mer informasjon, kan Alex tilby å sende en e-post med detaljer og en møtebooking-lenke. ### 4. Avslutning - Hvis prospektet godtar et møte, bør Alex bekrefte at de vil motta en oppfølgingsmelding med en booking-lenke og kontaktinformasjon. - Etter tre avslag bør Alex la døren stå åpen for fremtidig kontakt og takke for tiden deres. ### 5. Kommunikasjonsstil - Alex bør sørge for at samtalen flyter naturlig, tilpasset prospektets tempo og tone. En lett og imøtekommende tone bør opprettholdes, og eventuelle humoristiske innslag bør være subtile og bidra til en vennlig samtale. ### 6. Personlighetstrekk Alex bør fremstå som kunnskapsrik, imøtekommende, og fokusert på å løse problemer. Små samtalefyllord som “vel” eller “du vet” kan brukes for å etterligne naturlig tale og opprettholde engasjementet. ### 7. Håndtere komplekse spørsmål For mer tekniske eller detaljerte spørsmål, bør Alex foreslå å diskutere disse punktene nærmere under den planlagte konsultasjonen. ### 8. Håndtere automatiske svar Ved automatiske svar bør Alex viderekoble samtalen til Vengells hovedstøttelinje. ## Hovedmål Hovedmålet er å sikre en oppfølgingssamtale for en personlig konsultasjon om Vengells e-postmarkedsføringstjenester. Alex vil fortsette å tilby konsultasjonen inntil prospektet avslår tre ganger."
+                }
+            ],
+            "provider": "openai",
+            "maxTokens": 250,
+            "temperature": 0.7
+        },
+        "recordingEnabled": true,
+        "firstMessage": "Hei, jeg heter Alex, snakker jeg med Bendik?",
+        "voicemailMessage": "",
+        "endCallMessage": "",
+        "transcriber": {
+            "model": "nova-2",
+            "language": "no",
+            "provider": "deepgram"
+        },
+        "endCallFunctionEnabled": false,
+        "dialKeypadFunctionEnabled": false,
+        "hipaaEnabled": false,
+        "metadata": {
+            "user_email": "marekt0808@gmail.com"
+          },
+          "clientMessages": [
+            "transcript",
+            "hang",
+            "function-call",
+            "speech-update",
+            "metadata",
+            "conversation-update"
+        ],
+        "serverMessages": [
+            "end-of-call-report"
+        ],
+        "responseDelaySeconds": 1,
+        "serverUrl": "https://www.puellavone.sk/starostlivost-o-spotrebice/",
+        "endCallPhrases": [
+            "bye for nå"
+        ]
+      };
+    
+    
+        const apiKey = "8b5f180a-38eb-4798-af3e-ba8c1320df25"; // Substitute with your Public key from Vapi Dashboard.
+        const buttonConfig = {
+          position: "bottom-right", // "bottom" | "top" | "left" | "right" | "top-right" | "top-left" | "bottom-left" | "bottom-right"
+          offset: "40px", // decide how far the button should be from the edge
+          width: "50px", // min-width of the button
+          height: "50px", // height of the button
+          idle: { // button state when the call is not active.
+            color: `rgb(93, 254, 202)`, 
+            type: "pill", // or "round"
+            title: "Have a quick question?", // only required in case of Pill
+            subtitle: "Talk with our AI assistant", // only required in case of pill
+            icon: `https://unpkg.com/lucide-static@0.321.0/icons/phone.svg`,
+          },
+          loading: { // button state when the call is connecting
+            color: `rgb(93, 124, 202)`,
+            type: "pill", // or "round"
+            title: "Connecting...", // only required in case of Pill
+            subtitle: "Please wait", // only required in case of pill
+            icon: `https://unpkg.com/lucide-static@0.321.0/icons/loader-2.svg`,
+          },
+          active: { // button state when the call is in progress or active.
+            color: `rgb(255, 0, 0)`,
+            type: "pill", // or "round"
+            title: "Call is in progress...", // only required in case of Pill
+            subtitle: "End the call.", // only required in case of pill
+            icon: `https://unpkg.com/lucide-static@0.321.0/icons/phone-off.svg`,
+          },
+        };
+    
+      
+        (function (d, t) {
+          var g = document.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+          g.src =
+            "https://cdn.jsdelivr.net/gh/VapiAI/html-script-tag@latest/dist/assets/index.js";
+          g.defer = true;
+          g.async = true;
+          s.parentNode.insertBefore(g, s);
+      
+          g.onload = function () {
+            vapiInstance = window.vapiSDK.run({
+              apiKey: apiKey, // mandatory
+              assistant: assistant, // mandatory
+              config: buttonConfig, // optional
+            });
+    
+            vapiInstance.on('speech-start', () => {
+              console.log('Speech has started');
+            });
+    
+            vapiInstance.on('speech-end', () => {
+              console.log('Speech has ended');
+            });
+    
+            vapiInstance.on('call-start', () => {
+              console.log('Call has started');
+            });
+    
+            vapiInstance.on('call-end', () => {
+              console.log('Call has stopped');
+            });
+    
+            vapiInstance.on('volume-level', (volume) => {
+              console.log(`Assistant volume level: ${volume}`);
+            });
+    
+            // Function calls and transcripts will be sent via messages
+            vapiInstance.on('message', (message) => {
+              console.log(message);
+            });
+    
+            vapiInstance.on('error', (e) => {
+              console.error(e)
+            });
+    
+          };
+        })(document, "script");
+      
+      </script>
+</body>
+</html>
